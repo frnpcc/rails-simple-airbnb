@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+ .flat-show-card {
+  background-color: rgba(211, 211, 211, 0.383);
+  width: 600px;
+  padding: 20px;
+  margin: 6px;
+  border-radius: 5px;
+ }
+
+ .flat-card {
+  background-color: rgba(211, 211, 211, 0.383);
+  width: 300px;
+  padding: 20px;
+  margin: 6px;
+  border-radius: 5px;
+ }
