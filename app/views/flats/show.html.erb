@@ -1,4 +1,8 @@
-<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200" class="img-fluid" alt="Responsive image">
+<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200)">
+
+
+
+</div>
 <div class="container">
   <div class="d-flex">
       <div class="p-3">
@@ -9,13 +13,32 @@
         <div class="flat-show-card">
           <h2>More information about this flat</h2>
           <p><%= @flat.description %></p>
+          <div style="background-image: url('https://media.istockphoto.com/id/1189064346/es/foto/mapa-de-la-ciudad-con-pin-punteros-3d-renderizaci%C3%B3n-imagen.jpg?s=1024x1024&w=is&k=20&c=WhDBPEk9lAPyaJzx9EIe9Qg3cTeLwL4tfcjkpuHWeX0=');padding:200px;background-size: cover"></div>
         </div>
       </div>
       <div class="p-3">
         <div class="flat-card">
+          <h2>Book this place!</h2>
+          <form action="">
+            <div class="input-group">
+              <span class="input-group-text" id="start-date-label">From:</span>
+              <input type="text" class="form-control" placeholder="12/10/2017" aria-label="start-date" aria-describedby="start-date-label">
+            </div>
+            <div class="input-group mt-2">
+              <span class="input-group-text" id="end-date-label">To:</span>
+              <input type="text" class="form-control" placeholder="18/10/2017" aria-label="end-date" aria-describedby="start-date-label">
+            </div>
+            <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+          </form>
+        </div>
+        <div class="flat-card">
           <h2>Details</h2>
           <p>Number of guests allowed: <%= @flat.number_of_guests %> <i class="fa-solid fa-people-group"></i></p>
           <p>Price per night: <%= @flat.price_per_night %><i class="fa-solid fa-euro-sign"></i></p>
+        </div>
+        <div class="flat-card">
+          <p><strong>Share</strong></p>
+          <p><i class="fa-brands fa-facebook-square me-2"></i> <i class="fa-brands fa-twitter-square me-2"></i> <i class="fa-brands fa-pinterest-square me-2"></i></p>
         </div>
       </div>
   </div>
